@@ -1,0 +1,8 @@
+def create_table_without_duplicate(sheet_name: str, row_number: int, col_number: int):
+  try:
+    sheet=wks.worksheet(sheet_name)
+    wks.del_worksheet(sheet)
+  except:
+    pass
+  res=wks.add_worksheet(sheet_name, row_number, col_number)
+create_table_without_duplicate('Isakov',5,30)
